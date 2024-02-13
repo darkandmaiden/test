@@ -1,0 +1,16 @@
+let game = {
+  score: 0,
+  start: function() {
+    console.log("Игра началась!");
+    // ..логика начала игры
+    // ...
+    this.score += 100;
+    // ... 
+    setTimeout(this.gameOver.bind(this), (5000 + 1000));
+  },
+  gameOver: function() {
+    console.log("Игра окончена!"); 
+  }
+};
+
+game.start(); 
